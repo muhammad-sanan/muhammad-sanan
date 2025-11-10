@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <main className="pt-24">
+      <main>
         <Hero />
         <About />
         <Projects />

@@ -1,11 +1,6 @@
 import './globals.css'
-import type { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { ThemeProvider } from 'next-themes'
-
-export const metadata = {
-  title: 'Muhammad Sanan | Portfolio',
-  description: 'Full Stack Web Developer Portfolio',
-}
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

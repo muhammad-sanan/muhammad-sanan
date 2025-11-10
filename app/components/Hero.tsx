@@ -11,13 +11,13 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-teal-500 shadow-lg"
+        className="relative w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-teal-500 shadow-2xl"
       >
         <Image
           src="/images/WhatsApp.jpeg"
           alt="Muhammad Sanan"
           fill
-          sizes="(max-width: 768px) 200px, 250px"
+          sizes="(max-width: 768px) 240px, 288px"
           className="object-cover"
           priority
         />
@@ -34,7 +34,7 @@ export default function Hero() {
         </h1>
         <p className="mt-3 text-xl text-gray-400">Full Stack Web Developer</p>
         <p className="mt-2 text-gray-500 max-w-md">
-          I build modern, scalable web apps using Laravel, Next.js, and the MERN stack.
+          I build modern, scalable web apps using Laravel, Vue.js, Next.js, and React.
         </p>
       </motion.div>
     </section>

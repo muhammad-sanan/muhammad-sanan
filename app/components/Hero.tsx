@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left gap-10 px-6">
+    <section id="hero" className="h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left gap-10 px-6">
       {/* Profile Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
@@ -32,9 +32,9 @@ export default function Hero() {
         <h1 className="text-5xl md:text-6xl font-extrabold text-teal-400">
           Muhammad Sanan
         </h1>
-        <p className="mt-3 text-xl text-gray-400">Full Stack Web Developer</p>
+        <p className="mt-3 text-xl text-gray-400">Senior Software Engineer</p>
         <p className="mt-2 text-gray-500 max-w-md">
-          I build modern, scalable web apps using Laravel, Vue.js, Next.js, and React.
+          I’m a Senior Software Engineer experienced in architecting enterprise-level web applications using Laravel, Livewire, Filament, and modern JavaScript frameworks. I specialize in building clean, scalable systems, leading engineering teams, and transforming business requirements into reliable, production-ready solutions. My work focuses on performance, usability, and delivering software that truly makes an impact.
         </p>
       </motion.div>
     </section>

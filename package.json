@@ -1,29 +1,39 @@
 {
   "name": "muhammad-sanan",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "next.config.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "next start"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammad-sanan/muhammad-sanan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammad-sanan/muhammad-sanan/issues"
+  },
+  "homepage": "https://github.com/muhammad-sanan/muhammad-sanan#readme",
   "dependencies": {
     "framer-motion": "^12.23.24",
-    "lucide-react": "^0.553.0",
-    "next": "^14.2.9",
+    "lucide-react": "^0.555.0",
+    "next": "^16.0.4",
     "next-themes": "^0.4.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^18.3.26",
-    "@types/react-dom": "^18.3.7",
-    "eslint": "^9",
-    "eslint-config-next": "^14.2.33",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "typescript": "5.9.3"
   }
 }

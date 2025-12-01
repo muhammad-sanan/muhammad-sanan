@@ -1,18 +1,49 @@
-"use client"
+"use client";
+
+import { useState } from "react";
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<null | string>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+    setLoading(false);
+
+    if (result.success) {
+      setStatus("Message sent successfully.");
+      form.reset();
+    } else {
+      setStatus("Something went wrong. Please try again.");
+    }
+  }
+
   return (
     <section id="contact" className="py-24 px-8 max-w-4xl mx-auto">
       <h2 className="text-3xl font-bold text-teal-400 mb-6">Contact</h2>
+
       <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
+        onSubmit={handleSubmit}
         className="bg-gray-900 p-8 rounded-xl space-y-4 shadow-lg"
       >
-        {/* Required hidden Netlify input */}
-        <input type="hidden" name="form-name" value="contact" />
-
         <div>
           <label className="block text-gray-300 mb-1">Name</label>
           <input
@@ -47,9 +78,15 @@ export default function Contact() {
           type="submit"
           className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded font-semibold"
         >
-          Send Message
+          {loading ? "Sending..." : "Send Message"}
         </button>
+
+        {status && (
+          <p className="text-gray-300 mt-2">
+            {status}
+          </p>
+        )}
       </form>
     </section>
-  )
+  );
 }

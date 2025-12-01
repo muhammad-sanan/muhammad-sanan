@@ -34,14 +34,6 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: "The LockerRoom",
-    image: "/images/lrc.png",
-    description:
-      "Locker Room allows college athletes and fans to exchange video messages for shoutouts, coaching tips, or questions.",
-    url: "https://thelockerroom.app/",
-  },
-  {
-    id: 5,
     title: "The Peer Network",
     image: "/images/tpn.png",
     description:
@@ -49,7 +41,7 @@ export const projects: Project[] = [
     url: "https://thepeernetwork.com/",
   },
   {
-    id: 6,
+    id: 5,
     title: "My Local Gun Shop",
     image: "/images/mgshop.png",
     description:
@@ -57,7 +49,7 @@ export const projects: Project[] = [
     url: "https://mylocalgunshop.com/",
   },
   {
-    id: 7,
+    id: 6,
     title: "AMA Solar CRM",
     image: "/images/ama.png",
     description:

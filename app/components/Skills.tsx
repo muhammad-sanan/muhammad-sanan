@@ -9,15 +9,15 @@ const skills = {
 export default function Skills() {
   return (
     <section id="skills" className="py-24 px-8 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-teal-400 mb-8">Skills</h2>
+      <h2 className="text-3xl font-bold text-teal-600 dark:text-teal-400 mb-8">Skills</h2>
       {Object.entries(skills).map(([section, items], i) => (
         <div key={i} className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-300 my-2">{section}</h3>
+          <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 my-2">{section}</h3>
           <div className="flex flex-wrap gap-4">
             {items.map((item, j) => (
               <span
                 key={j}
-                className="bg-gray-900 text-gray-300 border border-gray-800 px-4 py-2 rounded-lg text-sm hover:bg-teal-400 hover:text-gray-900 transition"
+                className="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-800 px-4 py-2 rounded-lg text-sm hover:bg-teal-500 hover:text-white dark:hover:bg-teal-400 dark:hover:text-gray-900 transition"
               >
                 {item}
               </span>

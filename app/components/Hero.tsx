@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section id="hero" className="h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left gap-10 px-6">
+    <section id="hero" className="h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left gap-10 p-6">
       {/* Profile Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}

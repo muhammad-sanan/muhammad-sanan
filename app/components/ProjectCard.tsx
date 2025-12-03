@@ -17,20 +17,20 @@ export default function ProjectCard({ project }: Props) {
       href={project.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+      className="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
     >
-      <div className="relative w-full h-48 flex items-center justify-center bg-gray-800">
-          <Image
-            src={project.image || "/images/fallback.jpg"}
-            alt={project.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 33vw"
-            className="object-fit group-hover:scale-105 transition-transform duration-300"
-          />
+      <div className="relative w-full h-48 flex items-center justify-center bg-gray-200 dark:bg-gray-800">
+        <Image
+          src={project.image || "/images/fallback.jpg"}
+          alt={project.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
+        />
       </div>
       <div className="p-4">
-        <h3 className="text-lg font-semibold text-teal-400">{project.title}</h3>
-        <p className="text-gray-400 mt-1">{project.description}</p>
+        <h3 className="text-lg font-semibold text-teal-600 dark:text-teal-400">{project.title}</h3>
+        <p className="text-gray-600 dark:text-gray-400 mt-1">{project.description}</p>
       </div>
     </a>
   )

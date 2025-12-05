@@ -12,13 +12,13 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <main>
+      <main style={{ paddingTop: "var(--nav-height)" }}>
         <Hero />
         <About />
         <Projects />
         <Experience />
         <Skills />
-        <Education/>
+        <Education />
         <Contact />
       </main>
       <Footer />

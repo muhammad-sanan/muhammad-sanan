@@ -1,6 +1,6 @@
 "use client"
 import { motion, AnimatePresence } from "framer-motion"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import ThemeToggle from "./ThemeToggle"
 
@@ -20,12 +20,34 @@ export default function Navbar() {
     { href: "#contact", label: "Contact" },
   ]
 
+  useEffect(() => {
+    const nav = document.getElementById("navbar");
+
+    const updateHeight = () => {
+      if (nav) {
+        document.documentElement.style.setProperty(
+          "--nav-height",
+          `${nav.offsetHeight}px`
+        );
+      }
+    };
+
+    updateHeight();
+
+    // Recalculate on window resize
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
+
+
+
   return (
     <motion.nav
+      id="navbar"
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="flex justify-between items-center py-6 px-8 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md fixed w-full top-0 z-50 shadow-lg"
+      className="flex justify-between items-center p-6 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md fixed w-full top-0 left-0 z-50 shadow-lg"
     >
       <a href="#hero" className="text-2xl font-bold text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">
         Muhammad Sanan

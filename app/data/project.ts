@@ -56,4 +56,12 @@ export const projects: Project[] = [
       "A custom CRM app for managing solar energy projects — centralizes client data, pricing, proposals, and progress tracking.",
     url: "https://amasolarcrm.com/",
   },
+   {
+    id: 7,
+    title: "Prominute",
+    image: "/images/pro.png",
+    description:
+      "ProMinute delivers expert advice to professionals through short-form video exchanges on mobile. Users record quick video questions and receive personalized guidance from industry leaders in a seamless, on-demand process",
+    url: "https://www.prominute.com/",
+  },
 ];

@@ -15,7 +15,7 @@ export default function Footer() {
   const [copied, setCopied] = useState(false)
 
   const email = "muhammadsanan.se@gmail.com"
-  const phone = "+92 303 5826121"
+  const phone = "+92 303 5926121"
   const location = "Lahore, Pakistan"
 
   const handleCopyEmail = () => {

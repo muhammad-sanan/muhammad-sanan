@@ -33,26 +33,26 @@ const experience = [
       "Collaborated with global clients and ensured smooth deployments on various servers."
     ],
   },
-  {
-    role: "Web Developer",
-    company: "StepInnSolutions, Lahore",
-    period: "Dec 2020 - Feb 2021",
-    desc: [
-      "Developed web applications using Laravel.",
-      "Managed code versioning and deployments.",
-      "Collaborated with clients and internal teams to deliver high-quality solutions."
-    ],
-  },
-  {
-    role: "Web Development Intern",
-    company: "Purple Hats, Lahore",
-    period: "Nov 2019 - Feb 2020",
-    desc: [
-      "Supported senior developers in building web applications.",
-      "Assisted in debugging and implementing new features.",
-      "Adapted quickly to changing deadlines and team priorities."
-    ],
-  },
+  // {
+  //   role: "Web Developer",
+  //   company: "StepInnSolutions, Lahore",
+  //   period: "Dec 2020 - Feb 2021",
+  //   desc: [
+  //     "Developed web applications using Laravel.",
+  //     "Managed code versioning and deployments.",
+  //     "Collaborated with clients and internal teams to deliver high-quality solutions."
+  //   ],
+  // },
+  // {
+  //   role: "Web Development Intern",
+  //   company: "Purple Hats, Lahore",
+  //   period: "Nov 2019 - Feb 2020",
+  //   desc: [
+  //     "Supported senior developers in building web applications.",
+  //     "Assisted in debugging and implementing new features.",
+  //     "Adapted quickly to changing deadlines and team priorities."
+  //   ],
+  // },
 ]
 
 export default function Experience() {
